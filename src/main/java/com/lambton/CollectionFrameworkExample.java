@@ -1,7 +1,6 @@
 package com.lambton;
 
-import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.*;
 
 public class CollectionFrameworkExample
 {
@@ -31,5 +30,24 @@ public class CollectionFrameworkExample
             String s=iterator.next();
             System.out.println(s);
         }
+
+        Set<String> mySet=new HashSet<>();
+
+        mySet.add("India");
+        mySet.add("USA");
+        mySet.add("Canada");
+        mySet.add("China");
+        mySet.add("Pakistan");
+        System.out.println(mySet);
+
+        Map<String, String> stringStringMap=new HashMap<>();
+        stringStringMap.put("IND", "India");
+        stringStringMap.put("CAD", "Canada");
+        stringStringMap.put("USA", "United State");
+        stringStringMap.put("PAK", "Pakistan");
+        stringStringMap.put("CAD", "Canada");
+
+
+
     }
 }
