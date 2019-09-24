@@ -45,9 +45,33 @@ public class CollectionFrameworkExample
         stringStringMap.put("CAD", "Canada");
         stringStringMap.put("USA", "United State");
         stringStringMap.put("PAK", "Pakistan");
+        System.out.println(stringStringMap);
         stringStringMap.put("CAD", "Canada");
+        System.out.println(stringStringMap);
+
+        ArrayList <String> statesOfIndia=new ArrayList<>();
+
+        statesOfIndia.add("PB");
+        statesOfIndia.add("HP");
+        statesOfIndia.add("AP");
+
+        ArrayList <String> statesOfUsa=new ArrayList<>();
+
+        statesOfUsa.add("NY");
+        statesOfUsa.add("CA");
+        statesOfIndia.add("NJ");
+
+        ArrayList <String> statesOfCAD=new ArrayList<>();
+        statesOfCAD.add("ON");
+        statesOfCAD.add("SK");
 
 
+        Map<String,ArrayList > stringStringMap1=new HashMap<>();
+
+        stringStringMap1.put("IND",statesOfIndia);
+        stringStringMap1.put("USA",statesOfUsa);
+        stringStringMap1.put("CAD",statesOfCAD);
+        System.out.println(stringStringMap1);
 
     }
 }
