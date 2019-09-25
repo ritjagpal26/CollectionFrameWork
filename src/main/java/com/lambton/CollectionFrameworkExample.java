@@ -104,8 +104,8 @@ public class CollectionFrameworkExample
                 Character.valueOf(checkData.get(i))= Character.isLetter(a);
                 System.out.println(checkData.get(i));
             }*/
-        Map<String ,ArrayList> map=new HashMap<>();
-        for (String s:checkData) {
+        Map<String, ArrayList> map = new HashMap<>();
+        for (String s : checkData) {
             char[] c = s.toCharArray();
             Arrays.sort(c);
             String t = new String(c);
@@ -116,8 +116,8 @@ public class CollectionFrameworkExample
             al.add(s);
             map.put(t, al);
         }
-            System.out.println(map);
-        }
+        System.out.println(map);
+
         }
 
 
